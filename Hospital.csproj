@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{859DB5E1-0790-499A-84C1-5791AF60B295}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hospital</RootNamespace>
+    <AssemblyName>Hospital</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>54662D0A90759BF3451B44C03AABB08AB6D8A2B4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Hospital_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hospital-3_icon-icons.com_66075.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accident and emergency attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accident and emergency attendants.Designer.cs">
+      <DependentUpon>Accident and emergency attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accident and emergency clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accident and emergency clinics.Designer.cs">
+      <DependentUpon>Accident and emergency clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accident and emergency doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accident and emergency doctors.Designer.cs">
+      <DependentUpon>Accident and emergency doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accident and emergency nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accident and emergency nurses.Designer.cs">
+      <DependentUpon>Accident and emergency nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accident and emergency office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accident and emergency office.Designer.cs">
+      <DependentUpon>Accident and emergency office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accident and emergency patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accident and emergency patient.Designer.cs">
+      <DependentUpon>Accident and emergency patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accident and emergency training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accident and emergency training.Designer.cs">
+      <DependentUpon>Accident and emergency training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendantsmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendantsmain.Designer.cs">
+      <DependentUpon>Attendantsmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burn Center attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burn Center attendants.Designer.cs">
+      <DependentUpon>Burn Center attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burn Center clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burn Center clinics.Designer.cs">
+      <DependentUpon>Burn Center clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burn Center doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burn Center doctors.Designer.cs">
+      <DependentUpon>Burn Center doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burn Center nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burn Center nurses.Designer.cs">
+      <DependentUpon>Burn Center nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burn Center office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burn Center office.Designer.cs">
+      <DependentUpon>Burn Center office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burn Center patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burn Center patient.Designer.cs">
+      <DependentUpon>Burn Center patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burn Center training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burn Center training.Designer.cs">
+      <DependentUpon>Burn Center training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiology attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardiology attendants.Designer.cs">
+      <DependentUpon>Cardiology attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiology clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardiology clinics.Designer.cs">
+      <DependentUpon>Cardiology clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiology doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardiology doctors.Designer.cs">
+      <DependentUpon>Cardiology doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiology nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardiology nurses.Designer.cs">
+      <DependentUpon>Cardiology nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiology office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardiology office.Designer.cs">
+      <DependentUpon>Cardiology office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiology patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardiology patient.Designer.cs">
+      <DependentUpon>Cardiology patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardiology training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardiology training.Designer.cs">
+      <DependentUpon>Cardiology training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clinicmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clinicmain.Designer.cs">
+      <DependentUpon>clinicmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical Care attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical Care attendants.Designer.cs">
+      <DependentUpon>Critical Care attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical Care clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical Care clinics.Designer.cs">
+      <DependentUpon>Critical Care clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical Care doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical Care doctors.Designer.cs">
+      <DependentUpon>Critical Care doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical Care nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical Care nurses.Designer.cs">
+      <DependentUpon>Critical Care nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical Care office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical Care office.Designer.cs">
+      <DependentUpon>Critical Care office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical Care patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical Care patient.Designer.cs">
+      <DependentUpon>Critical Care patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical Care training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical Care training.Designer.cs">
+      <DependentUpon>Critical Care training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="departmentinfotest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departmentinfotest.Designer.cs">
+      <DependentUpon>departmentinfotest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic Imaging attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic Imaging attendants.Designer.cs">
+      <DependentUpon>Diagnostic Imaging attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic Imaging clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic Imaging clinics.Designer.cs">
+      <DependentUpon>Diagnostic Imaging clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic Imaging doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic Imaging doctors.Designer.cs">
+      <DependentUpon>Diagnostic Imaging doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic Imaging nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic Imaging nurses.Designer.cs">
+      <DependentUpon>Diagnostic Imaging nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic Imaging office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic Imaging office.Designer.cs">
+      <DependentUpon>Diagnostic Imaging office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic Imaging patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic Imaging patient.Designer.cs">
+      <DependentUpon>Diagnostic Imaging patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic Imaging training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic Imaging training.Designer.cs">
+      <DependentUpon>Diagnostic Imaging training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctormain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctormain.Designer.cs">
+      <DependentUpon>doctormain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Endoscopy  clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Endoscopy  clinics.Designer.cs">
+      <DependentUpon>Endoscopy  clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Endoscopy doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Endoscopy doctors.Designer.cs">
+      <DependentUpon>Endoscopy doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Endoscopy nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Endoscopy nurses.Designer.cs">
+      <DependentUpon>Endoscopy nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Endoscopy patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Endoscopy patient.Designer.cs">
+      <DependentUpon>Endoscopy patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Endoscopy training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Endoscopy training.Designer.cs">
+      <DependentUpon>Endoscopy training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastroenterology attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastroenterology attendants.Designer.cs">
+      <DependentUpon>Gastroenterology attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastroenterology clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastroenterology clinics.Designer.cs">
+      <DependentUpon>Gastroenterology clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastroenterology doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastroenterology doctors.Designer.cs">
+      <DependentUpon>Gastroenterology doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastroenterology nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastroenterology nurses.Designer.cs">
+      <DependentUpon>Gastroenterology nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastroenterology office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastroenterology office.Designer.cs">
+      <DependentUpon>Gastroenterology office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastroenterology patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastroenterology patient.Designer.cs">
+      <DependentUpon>Gastroenterology patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastroenterology training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastroenterology training.Designer.cs">
+      <DependentUpon>Gastroenterology training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General Surgery clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General Surgery clinics.Designer.cs">
+      <DependentUpon>General Surgery clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General Surgery doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General Surgery doctors.Designer.cs">
+      <DependentUpon>General Surgery doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General Surgery nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General Surgery nurses.Designer.cs">
+      <DependentUpon>General Surgery nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General Surgery patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General Surgery patient.Designer.cs">
+      <DependentUpon>General Surgery patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General Surgery training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General Surgery training.Designer.cs">
+      <DependentUpon>General Surgery training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human Resources office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human Resources office.Designer.cs">
+      <DependentUpon>Human Resources office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainindex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainindex.Designer.cs">
+      <DependentUpon>mainindex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Microbiology attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microbiology attendants.Designer.cs">
+      <DependentUpon>Microbiology attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Microbiology clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microbiology clinics.Designer.cs">
+      <DependentUpon>Microbiology clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Microbiology doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microbiology doctors.Designer.cs">
+      <DependentUpon>Microbiology doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Microbiology nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microbiology nurses.Designer.cs">
+      <DependentUpon>Microbiology nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Microbiology office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microbiology office.Designer.cs">
+      <DependentUpon>Microbiology office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Microbiology patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microbiology patient.Designer.cs">
+      <DependentUpon>Microbiology patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Microbiology training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microbiology training.Designer.cs">
+      <DependentUpon>Microbiology training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Neonatal attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Neonatal attendants.Designer.cs">
+      <DependentUpon>Neonatal attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Neonatal clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Neonatal clinics.Designer.cs">
+      <DependentUpon>Neonatal clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Neonatal doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Neonatal doctors.Designer.cs">
+      <DependentUpon>Neonatal doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Neonatal nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Neonatal nurses.Designer.cs">
+      <DependentUpon>Neonatal nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Neonatal office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Neonatal office.Designer.cs">
+      <DependentUpon>Neonatal office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Neonatal patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Neonatal patient.Designer.cs">
+      <DependentUpon>Neonatal patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Neonatal training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Neonatal training.Designer.cs">
+      <DependentUpon>Neonatal training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nursemain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nursemain.Designer.cs">
+      <DependentUpon>nursemain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupational Therapy attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupational Therapy attendants.Designer.cs">
+      <DependentUpon>Occupational Therapy attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupational Therapy clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupational Therapy clinics.Designer.cs">
+      <DependentUpon>Occupational Therapy clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupational Therapy doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupational Therapy doctors.Designer.cs">
+      <DependentUpon>Occupational Therapy doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupational Therapy nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupational Therapy nurses.Designer.cs">
+      <DependentUpon>Occupational Therapy nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupational Therapy office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupational Therapy office.Designer.cs">
+      <DependentUpon>Occupational Therapy office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupational Therapy patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupational Therapy patient.Designer.cs">
+      <DependentUpon>Occupational Therapy patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupational Therapy training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupational Therapy training.Designer.cs">
+      <DependentUpon>Occupational Therapy training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office Workersmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office Workersmain.Designer.cs">
+      <DependentUpon>Office Workersmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientmain.Designer.cs">
+      <DependentUpon>patientmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy drugs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy drugs.Designer.cs">
+      <DependentUpon>Pharmacy drugs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy nurses.Designer.cs">
+      <DependentUpon>Pharmacy nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radiology attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiology attendants.Designer.cs">
+      <DependentUpon>Radiology attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiology clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiology clinics.Designer.cs">
+      <DependentUpon>Radiology clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiology doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiology doctors.Designer.cs">
+      <DependentUpon>Radiology doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiology nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiology nurses.Designer.cs">
+      <DependentUpon>Radiology nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiology office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiology office.Designer.cs">
+      <DependentUpon>Radiology office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiology patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiology patient.Designer.cs">
+      <DependentUpon>Radiology patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiology training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiology training.Designer.cs">
+      <DependentUpon>Radiology training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiotherapy attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiotherapy attendants.Designer.cs">
+      <DependentUpon>Radiotherapy attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiotherapy clinics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiotherapy clinics.Designer.cs">
+      <DependentUpon>Radiotherapy clinics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiotherapy doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiotherapy doctors.Designer.cs">
+      <DependentUpon>Radiotherapy doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiotherapy nurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiotherapy nurses.Designer.cs">
+      <DependentUpon>Radiotherapy nurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiotherapy office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiotherapy office.Designer.cs">
+      <DependentUpon>Radiotherapy office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiotherapy patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiotherapy patient.Designer.cs">
+      <DependentUpon>Radiotherapy patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radiotherapy training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radiotherapy training.Designer.cs">
+      <DependentUpon>Radiotherapy training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainingmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainingmain.Designer.cs">
+      <DependentUpon>trainingmain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accident and emergency attendants.resx">
+      <DependentUpon>Accident and emergency attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accident and emergency clinics.resx">
+      <DependentUpon>Accident and emergency clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accident and emergency doctors.resx">
+      <DependentUpon>Accident and emergency doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accident and emergency nurses.resx">
+      <DependentUpon>Accident and emergency nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accident and emergency office.resx">
+      <DependentUpon>Accident and emergency office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accident and emergency patient.resx">
+      <DependentUpon>Accident and emergency patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accident and emergency training.resx">
+      <DependentUpon>Accident and emergency training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendantsmain.resx">
+      <DependentUpon>Attendantsmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burn Center attendants.resx">
+      <DependentUpon>Burn Center attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burn Center clinics.resx">
+      <DependentUpon>Burn Center clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burn Center doctors.resx">
+      <DependentUpon>Burn Center doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burn Center nurses.resx">
+      <DependentUpon>Burn Center nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burn Center office.resx">
+      <DependentUpon>Burn Center office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burn Center patient.resx">
+      <DependentUpon>Burn Center patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burn Center training.resx">
+      <DependentUpon>Burn Center training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardiology attendants.resx">
+      <DependentUpon>Cardiology attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardiology clinics.resx">
+      <DependentUpon>Cardiology clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardiology doctors.resx">
+      <DependentUpon>Cardiology doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardiology nurses.resx">
+      <DependentUpon>Cardiology nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardiology office.resx">
+      <DependentUpon>Cardiology office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardiology patient.resx">
+      <DependentUpon>Cardiology patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardiology training.resx">
+      <DependentUpon>Cardiology training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clinicmain.resx">
+      <DependentUpon>clinicmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical Care attendants.resx">
+      <DependentUpon>Critical Care attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical Care clinics.resx">
+      <DependentUpon>Critical Care clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical Care doctors.resx">
+      <DependentUpon>Critical Care doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical Care nurses.resx">
+      <DependentUpon>Critical Care nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical Care office.resx">
+      <DependentUpon>Critical Care office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical Care patient.resx">
+      <DependentUpon>Critical Care patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical Care training.resx">
+      <DependentUpon>Critical Care training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departmentinfotest.resx">
+      <DependentUpon>departmentinfotest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostic Imaging attendants.resx">
+      <DependentUpon>Diagnostic Imaging attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostic Imaging clinics.resx">
+      <DependentUpon>Diagnostic Imaging clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostic Imaging doctors.resx">
+      <DependentUpon>Diagnostic Imaging doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostic Imaging nurses.resx">
+      <DependentUpon>Diagnostic Imaging nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostic Imaging office.resx">
+      <DependentUpon>Diagnostic Imaging office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostic Imaging patient.resx">
+      <DependentUpon>Diagnostic Imaging patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostic Imaging training.resx">
+      <DependentUpon>Diagnostic Imaging training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctormain.resx">
+      <DependentUpon>doctormain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Endoscopy  clinics.resx">
+      <DependentUpon>Endoscopy  clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Endoscopy doctors.resx">
+      <DependentUpon>Endoscopy doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Endoscopy nurses.resx">
+      <DependentUpon>Endoscopy nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Endoscopy patient.resx">
+      <DependentUpon>Endoscopy patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Endoscopy training.resx">
+      <DependentUpon>Endoscopy training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastroenterology attendants.resx">
+      <DependentUpon>Gastroenterology attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastroenterology clinics.resx">
+      <DependentUpon>Gastroenterology clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastroenterology doctors.resx">
+      <DependentUpon>Gastroenterology doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastroenterology nurses.resx">
+      <DependentUpon>Gastroenterology nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastroenterology office.resx">
+      <DependentUpon>Gastroenterology office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastroenterology patient.resx">
+      <DependentUpon>Gastroenterology patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastroenterology training.resx">
+      <DependentUpon>Gastroenterology training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General Surgery clinics.resx">
+      <DependentUpon>General Surgery clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General Surgery doctors.resx">
+      <DependentUpon>General Surgery doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General Surgery nurses.resx">
+      <DependentUpon>General Surgery nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General Surgery patient.resx">
+      <DependentUpon>General Surgery patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General Surgery training.resx">
+      <DependentUpon>General Surgery training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human Resources office.resx">
+      <DependentUpon>Human Resources office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainindex.resx">
+      <DependentUpon>mainindex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microbiology attendants.resx">
+      <DependentUpon>Microbiology attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microbiology clinics.resx">
+      <DependentUpon>Microbiology clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microbiology doctors.resx">
+      <DependentUpon>Microbiology doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microbiology nurses.resx">
+      <DependentUpon>Microbiology nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microbiology office.resx">
+      <DependentUpon>Microbiology office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microbiology patient.resx">
+      <DependentUpon>Microbiology patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microbiology training.resx">
+      <DependentUpon>Microbiology training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Neonatal attendants.resx">
+      <DependentUpon>Neonatal attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Neonatal clinics.resx">
+      <DependentUpon>Neonatal clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Neonatal doctors.resx">
+      <DependentUpon>Neonatal doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Neonatal nurses.resx">
+      <DependentUpon>Neonatal nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Neonatal office.resx">
+      <DependentUpon>Neonatal office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Neonatal patient.resx">
+      <DependentUpon>Neonatal patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Neonatal training.resx">
+      <DependentUpon>Neonatal training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nursemain.resx">
+      <DependentUpon>nursemain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupational Therapy attendants.resx">
+      <DependentUpon>Occupational Therapy attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupational Therapy clinics.resx">
+      <DependentUpon>Occupational Therapy clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupational Therapy doctors.resx">
+      <DependentUpon>Occupational Therapy doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupational Therapy nurses.resx">
+      <DependentUpon>Occupational Therapy nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupational Therapy office.resx">
+      <DependentUpon>Occupational Therapy office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupational Therapy patient.resx">
+      <DependentUpon>Occupational Therapy patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupational Therapy training.resx">
+      <DependentUpon>Occupational Therapy training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office Workersmain.resx">
+      <DependentUpon>Office Workersmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientmain.resx">
+      <DependentUpon>patientmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy drugs.resx">
+      <DependentUpon>Pharmacy drugs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy nurses.resx">
+      <DependentUpon>Pharmacy nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Radiology attendants.resx">
+      <DependentUpon>Radiology attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiology clinics.resx">
+      <DependentUpon>Radiology clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiology doctors.resx">
+      <DependentUpon>Radiology doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiology nurses.resx">
+      <DependentUpon>Radiology nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiology office.resx">
+      <DependentUpon>Radiology office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiology patient.resx">
+      <DependentUpon>Radiology patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiology training.resx">
+      <DependentUpon>Radiology training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiotherapy attendants.resx">
+      <DependentUpon>Radiotherapy attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiotherapy clinics.resx">
+      <DependentUpon>Radiotherapy clinics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiotherapy doctors.resx">
+      <DependentUpon>Radiotherapy doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiotherapy nurses.resx">
+      <DependentUpon>Radiotherapy nurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiotherapy office.resx">
+      <DependentUpon>Radiotherapy office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiotherapy patient.resx">
+      <DependentUpon>Radiotherapy patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radiotherapy training.resx">
+      <DependentUpon>Radiotherapy training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainingmain.resx">
+      <DependentUpon>trainingmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Hospital_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hospital-3_icon-icons.com_66075.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
