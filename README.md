@@ -8,7 +8,7 @@
 </p><br/>
 
 <p align="left">
-This is a <b>Hospital Management Desktop Application built using C#, .NET Framework, and SQL Server as part of the PUSL2021 - Computing Group Project module coursework.  
+This is a Hospital Management Desktop Application built using C#, .NET Framework, and SQL Server as part of the PUSL2021 - Computing Group Project module coursework.  
 The system is designed to streamline hospital administration by allowing secure management of patients, doctors, nurses, staff, departments, and clinics within a user-friendly interface.
 </p>
 
@@ -45,8 +45,6 @@ The system is designed to streamline hospital administration by allowing secure 
 This project demonstrates full-stack desktop development skills, including user authentication, database design, CRUD operations, system architecture, and performance optimization.  
 It provides a scalable, secure, and efficient hospital management solution for real-world healthcare environments.
 </p><br/>
-
-<h4 align="left">Screenshots</h4>
 
 <img src="Readme_img/1.png" alt="login" width="500" height="250"  align="left"/><br/>
 <img src="Readme_img/2.png" alt="home" width="500" height="250"  align="left"/><br/>
