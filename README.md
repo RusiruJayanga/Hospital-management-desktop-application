@@ -1,6 +1,4 @@
 <h2 align="left">Hospital-management-desktop-application</h2><br/>
-<h2 align="left">Hospital-management-desktop-application</h2><br/>
-
 
 <h4 align="left">LANGUAGES AND TOOLS</h4>
 <p align="left"> 
